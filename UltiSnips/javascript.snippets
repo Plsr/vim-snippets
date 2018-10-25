@@ -1,0 +1,49 @@
+# Creating components
+snippet rcc "React Class Component" b
+import React, { Component } from 'react'
+import styled, { css } from 'react-emotion'
+import PropTypes from 'prop-types'
+
+class ${1:`!v expand('%:t:r')`} extends Component {
+	static propTypes = {
+	}
+
+	render() {
+		return (
+			<div>
+				$3
+			</div>
+		)
+	}
+}
+
+export default $1
+endsnippet
+
+snippet rcpc "React Class PureComponent" b
+import React, { PureComponent } from 'react'
+import styled, { css } from 'react-emotion'
+import PropTypes from 'prop-types'
+
+class ${1:`!v expand('%:t:r')`} extends PureComponent {
+	static propTypes = {
+	}
+
+	render() {
+		return (
+			<div>
+				$3
+			</div>
+		)
+	}
+}
+
+export default $1
+endsnippet
+
+# Util
+snippet f=>() "Class function without arguments" b
+${1:function} = () => {
+	$2
+}
+endsnippet
