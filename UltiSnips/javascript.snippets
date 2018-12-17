@@ -52,6 +52,14 @@ snippet dest "Destructuring of an object" b
 const { ${1:variables} } = ${2:object}
 endsnippet
 
+snippet dest "Destructuring of props" b
+const { ${1:variables} } = this.props
+endsnippet
+
+snippet dest "Destructuring of state" b
+const { ${1:variables} } = this.state
+endsnippet
+
 # Documentation
 snippet todo "Add a new inline TODO as a JS comment" b
 // TODO: ${1} (`date +'%d/%m/%Y'`, by `whoami`)
